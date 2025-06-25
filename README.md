@@ -93,7 +93,7 @@ from findsym import findsym
 # Process multiple structures
 for cif_file in glob.glob("*.cif"):
     print(f"Processing {cif_file}...")
-    result = findsym(cif_file, tolerance=1e-3)
+    result = findsym(cif_file)
     print(f"Space group: {result['number']}")
 ```
 
@@ -172,11 +172,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Built on top of [spglib](https://spglib.github.io/spglib/) for symmetry operations
 - Uses [ASE](https://wiki.fysik.dtu.dk/ase/) for structure handling
 - Visualization powered by [matplotlib](https://matplotlib.org/)
-
-## Support
-
-If you encounter any issues or have questions, please:
-
-1. Check the [documentation](https://github.com/yourusername/findsym)
-2. Search existing [issues](https://github.com/yourusername/findsym/issues)
-3. Create a new issue if needed
