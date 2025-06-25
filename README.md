@@ -166,15 +166,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Citation
-
-If you use FINDSYM in your research, please cite:
-
-```
-FINDSYM: Crystal Structure Symmetry Detection
-https://github.com/yourusername/findsym
-```
-
 ## Acknowledgments
 
 - Inspired by the original [FINDSYM](https://stokes.byu.edu/iso/findsymform.php) from BYU's [Isotropy Software Suite](https://stokes.byu.edu/iso/isotropy.php)
