@@ -31,7 +31,7 @@ class TestFindsym:
         """Test that version is accessible."""
         from findsym import __version__
 
-        assert __version__ == "0.1.0"
+        assert __version__ == "0.1.1"
 
     @pytest.mark.skipif(
         not os.path.exists("SrTiO3_mp-4651_primitive.cif"),

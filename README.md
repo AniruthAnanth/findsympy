@@ -28,7 +28,7 @@ pip install findsym[visualization]
 ### From source
 
 ```bash
-git clone https://github.com/yourusername/findsym.git
+git clone https://github.com/AniruthAnanth/findsympy.git
 cd findsym
 pip install -e .
 ```
