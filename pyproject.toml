@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "findsym"
+version = "0.1.0"
+description = "FINDSYM: Symmetry detection for crystal structures"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Aniruth Ananthanarayanan", email = "aniruthananthanarayanan@my.unt.edu"}
+]
+maintainers = [
+    {name = "Aniruth Ananthanarayanan", email = "aniruthananthanarayanan@my.unt.edu"}
+]
+keywords = ["crystallography", "symmetry", "spglib", "materials-science"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.18.0",
+    "ase>=3.20.0",
+    "spglib>=1.16.0",
+]
+
+[project.optional-dependencies]
+visualization = ["matplotlib>=3.3.0"]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "black",
+    "flake8",
+    "isort",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AniruthAnanth/findsympy"
+"Bug Reports" = "https://github.com/AniruthAnanth/findsympy/issues"
+"Source" = "https://github.com/AniruthAnanth/findsympy"
+
+[project.scripts]
+findsym = "findsym:main"
+
+[tool.setuptools]
+packages = ["findsym"]
+
+[tool.setuptools.package-data]
+findsym = ["*.txt", "*.md"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88
