@@ -1,5 +1,10 @@
 # FINDSYM: Crystal Structure Symmetry Detection
 
+<!-- PyPI Badges for findsym -->
+[![PyPI Version](https://img.shields.io/pypi/v/findsym?logo=pypi)](https://pypi.org/project/findsym/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/findsym?logo=python)](https://pypi.org/project/findsym/)
+[![License](https://img.shields.io/pypi/l/findsym)](https://github.com/AniruthAnanth/findsympy/blob/main/LICENSE)
+
 FINDSYM is a Python package for detecting and analyzing crystal structure symmetries. It provides tools to identify space groups, point groups, and Wyckoff positions in crystalline materials.
 
 ## Features
